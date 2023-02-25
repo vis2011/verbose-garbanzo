@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'norwester';
+    src: url('norwester.woff2') format('woff2');
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:690px) {
+    .navbar {
+            background-color: #00000000;
+            height: 0.0vh;
+            width: 100%;
+            margin-top: -2vh;
+        }
+    
+    .heading {
+    font-family: 'League Spartan', sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 4vh;
+    padding-left: 5vh;
+    position: relative;
+    margin-bottom: -20vh;
+    z-index: 1;
+    }
+
+    .hamburger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin-bottom: -19vh;
+    margin-right: 7vh;
+    cursor: pointer;
+    z-index: 1;
+    }
+
+    .line {
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: #DEFEFF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    }
+
+        .line:nth-child(1) {
+            top: 25%;
+            transform: translateY(-50%);
+        }
+
+    .line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+    .line:nth-child(3) {
+    top: 75%;
+    transform: translateY(-50%);
+    }
+
+    .hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+    }
+
+    .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+    }
+
+        .menu {
+            display: none;
+            position: absolute;
+            margin-bottom: -13vh;
+            right: 0;
+            width: 100%;
+            background-color: transparent;
+            transition: 1s;
+            padding-top: 22vh;
+            box-shadow: 0 2px 5px rgba(7, 7, 7, 0.2);
+        }
+
+        .menu.active {
+            display:block;
+            margin-top: 22vh;
+            transition: all 1s ease-in-out;
+            backdrop-filter: blur(6px);
+        }
+
+        .menu li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px;
+            color: #DEFEFF;
+            text-decoration: none;
+            width: 90%;
+            margin-left: 2.5vh;
+            text-transform: uppercase;
+            font-size: 1.8vh;
+            font-weight: 600;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .menu li a:hover {
+            background-color: #DEFEFF;
+            color: #022646;
+        }
+    
+        .home {
+            height: 70vh;
+            width: 100%;
+            background-image: linear-gradient(to right bottom, #00c4cc, #00bdc5, #01b7be, #01b0b8, #01aab1, #009cab, #008da3, #007f99, #006588, #004b74, #00325d, #0a1a44);
+        }
+
+        .home-heading{
+            font-family: 'norwester';
+            font-size: 7vh;
+            letter-spacing: 4px;
+            color: #DEFEFF;
+            margin-top: 35%;
+            margin-left: 10%;
+        }
+
+        .home-subheading{
+          color:#dffeff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 200;
+                    margin-left: 10%;
+                    margin-top: 5%;
+        }
+
+        .home-button{
+            background-color:  #00b5bb;
+            outline: none;
+            border: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5vh;
+            margin-top: 7%;
+            margin-left: 10%;
+            padding: 1vh;
+            border-radius: 5vh;
+            padding-left: 2vh;
+            padding-right : 2vh
+        }
+
+        .home-button:hover{
+            box-shadow: 0 0 10px #c2f5f6, 0 0 20px #c2f5f6, 0 0 30px #c2f5f6;
+        }
+
+        .About-me{
+            height: 70vh;
+            width: 100%;
+        }
+
+        .about-heading{
+            font-family: 'norwester';
+            font-size: 5vh;
+            color: #0A1A44;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .about-subheading{
+            font-family: 'Poppins', sans-serif;
+            color: #0A1A44;
+            font-size: 2vh;
+            margin-left: 6%;
+        }
+
+        .courses{
+            width: 100%;
+            background-color: #FAFAFA;
+            padding-bottom: 5vh;
+        }
+
+        .courses-heading{
+            color: #0A1A44;
+            font-family: 'norwester';
+            font-size: 6vh;
+            margin-left: 32%;
+            margin-top: 3%;
+        }
+                 .card1 {
+                     width: 55%;
+                     height: 40vh;
+                     background-color: #0a1a44;
+                     border-radius: 3px;
+                     transition: all .2s;
+                     margin-left: 23%;
+                     margin-top: 10%;
+                 }
+        
+                 .card1:hover {
+                     transform: scale(0.98);
+                     border-radius: 20px;
+                    box-shadow: 0 0 10px #6398fb, 0 0 20px #6398fb, 0 0 30px #6398fb;
+                 }
+
+                 .card1-title{
+                    border-radius: 50%;
+                    width: 10vh;
+                    height: 10vh;
+                    background-color: #00C4CC;
+                    color: #0a1a44;
+                    font-size: 7vh;
+                    margin-left: 2vh;
+                    margin-top: 5%;
+                    padding: 1vh;
+                    position: relative;
+                    font-family: 'Poppins' , sans-serif;
+                 }
+
+                 .card-maintext{
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 3vh;
+                    margin: 10%;
+                    font-weight: 100;
+                 }
+
+                 .review{
+                    height: 70vh;
+                        width: 100%;
+                        background-image: linear-gradient(to right bottom, #00c4cc, #00bdc5, #01b7be, #01b0b8, #01aab1, #009cab, #008da3, #007f99, #006588, #004b74, #00325d, #0a1a44);
+                 }
+
+                 .review-title{
+                    font-family: 'norwester';
+                    color: #DEFEFF;
+                    font-size: 5vh;
+                    margin-left: 17%;
+                 }
+
+}
